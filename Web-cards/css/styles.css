@@ -80,9 +80,13 @@ p{
     width: 40px;
     height: 40px;
 }
+
  .icon--primary{
     fill: var(--color-primary);
 } 
+.icon--white{
+    fill: #fff;
+}
 .icon-container{
     background: #f3f9fa;
     width: 64px;
@@ -91,6 +95,9 @@ p{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+}
+.icon-container--accent{
+    background: var(--color-accent);
 }
 /* Buttons */
 .btn{
@@ -235,6 +242,7 @@ color: #fff;
        
         padding: 1rem;
         margin: 1rem;
+        width: 100%;
     }
     .badge{
         margin-left: -30px;
@@ -260,7 +268,10 @@ color: #fff;
     .plan__description{
         font-size: 1rem;
     }
-    
+    .paragraph{
+    padding-left: 8rem !important;
+    font-size: 3rem;
+    }
 }
 @media screen and (min-width:1024px) {
     .plan {
@@ -277,6 +288,7 @@ color: #fff;
     .card{
         padding: 1rem;
         margin: 1rem;
+        width: 100%;
     }
     .badge{
         margin-left: -1px;
@@ -295,7 +307,24 @@ color: #fff;
     .plan__description{
         font-size: 1.7rem;
     }
-    
+    .icon-container{
+        
+        width: 110px;
+        height: 110px;
+        
+    }
+    .icon--large{
+        width: 60px;
+        height: 60px;
+    }
+    .testimonial__image > .icon-container{
+        
+        right: -55px !important;
+    }
+    .paragraph{
+        padding-left: 8rem !important;
+        font-size: 3rem;
+    }
 }
 /* Media */
 .media{
@@ -306,4 +335,38 @@ color: #fff;
 }
 .media__body{
     margin: 0 2rem;
+}
+.grid{
+    display: grid;
+}
+ @media screen and (min-width:768px) {
+    .grid--1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+}/*
+@media screen and (min-width:1024px) {
+    .grid--1x3{
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+} */
+/* Testimonial */
+.testimonial{
+    padding: 3rem;   
+}
+.testimonial__image{
+    position: relative;
+}
+.testimonial__image > img{
+    width: 100%;
+}
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+.paragraph{
+    padding-left: 1rem;
+    font-size: 3rem;
 }
