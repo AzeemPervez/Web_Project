@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
   </head>
   <body style="padding: 5rem">
-    <div>
+    <!-- <div>
       <div class="plan plan--popular">
         <div class="card card--secondary">
           <header class="card__header">
@@ -106,10 +106,10 @@
     <div class="card testimonial">
       <div class="grid grid--1x2">
         <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="" />
+          <img src="../images/testimonial.jpg" alt="" />
           <span class="icon-container icon-container--accent">
             <svg class="icon icon--white icon--large">
-              <use xlink:href="sprite.svg#quotes"></use>
+              <use xlink:href="../sprite.svg#quotes"></use>
             </svg>
           </span>
         </div>
@@ -141,7 +141,7 @@
         <h2 class="collapsible__heading">Item 1</h2>
 
         <svg class="icon icon--primary collapsible__chevron">
-          <use xlink:href="sprite.svg#clock"></use>
+          <use xlink:href="../sprite.svg#clock"></use>
         </svg>
       </header>
       <div class="collapsible__content">
@@ -156,7 +156,7 @@
         <h2 class="collapsible__heading">Item 1</h2>
 
         <svg class="icon icon--primary collapsible__chevron">
-          <use xlink:href="sprite.svg#snap"></use>
+          <use xlink:href="../sprite.svg#snap"></use>
         </svg>
       </header>
       <div class="collapsible__content">
@@ -165,7 +165,43 @@
         ipsa atque voluptate mollitia dolorum nemo beatae? Doloribus atque hic
         possimus.
       </div>
-    </div>
-    <script src="js/main.js"></script>
+    </div> 
+
+    <section class="block container">
+      <header class="block__header">
+        <h2 class="block__heading">Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          modi laboriosam tempore provident autem nulla placeat alias mollitia
+          at, dolorum earum voluptate vero! Tempore, dicta aut odit totam quo
+          optio?
+        </p>
+      </header>
+    </section>
+    <section class="block block--dark block--skewed-left">
+      <div class="container">
+        <h2 class="block__heading">Heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          modi laboriosam tempore provident autem nulla placeat alias mollitia
+          at, dolorum earum voluptate vero! Tempore, dicta aut odit totam quo
+          optio?
+        </p>
+      </div>
+    </section>-->
+
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="../images/logo.png" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="">Hosting</a></li>
+        <li class="nav__item"><a href="">VPS</a></li>
+        <li class="nav__item"><a href="">Domain</a></li>
+        <li class="nav__item"><a href="">Pricing</a></li>
+      </ul>
+    </nav>
+    <script src="../js/main.js"></script>
   </body>
 </html>
