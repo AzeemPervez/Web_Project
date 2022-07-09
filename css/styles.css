@@ -66,6 +66,7 @@ a{
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;
+    
 }
 .link-arrow::after{
     content: "-->";
@@ -77,6 +78,9 @@ a{
 }
 @media screen and (min-width: 1024px) {
 
+    a{
+        text-decoration: none;
+    }
    .link-arrow{
     font-size: 1.5rem;
     
