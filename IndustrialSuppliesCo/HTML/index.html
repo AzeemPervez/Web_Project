@@ -27,7 +27,7 @@
     </div>
     <!-- -----------------------Hero------------------------ -->
     <section class="block block--dark hero">
-      <div class="container grid grid--1x2">
+      <div class="container ">
         <header class="block__header hero__content">
           <h1 class="block__heading">
             Refactory Bricks You Can Put through Hell!
@@ -51,33 +51,38 @@
       </div>
     </section>
 
-    <section class="block container block-domain">
-      <header class="block__header1 about-us">
-        <h2 class="about-us-heading">About Us</h2>
-        <img class="about-us-img" src="../IMAGES/about_us.jpg" alt="" />
-        <p class="about-us-p">
-          Industrial Supplies Co. is a Canadian distributor of temperature
-          resistant refractories to the toughest steel making applications. Our
-          global supplier network has delivered over 30,000 tons of refractories
-          to steel makers in 5 continents.
-        </p>
-        <p class="about-us-p">
-          ISO 9002 certified, our partners manufacture the firebrick critical in
-          lining the furnaces supporting steel making in both hot and cold
-          rolled applications in North America.
-        </p>
-        <p class="about-us-p">
-          Our customers consistently achieve 10-15% more melts out of their
-          refractories. Our bricks have High C%, with better corrosion and
-          cracking resistance. Our engineering group also develop monolithics
-          for customer-specific steel making applications.
-        </p>
-        <a href="" class="btn btn--accent btn--stretched">Contact Us</a>
+    <section class="block container block-domain about-container">
+      <h2 class="about-us-heading ">About Us</h2>
+      <header class="block__header1 about-us grid grid--1x2">
+        
+        <div class="about-img"><img class="about-us-img" src="../IMAGES/about_us.jpg" alt="" /></div>
+        <div class="about-info">
+          <p class="about-us-p">
+            Industrial Supplies Co. is a Canadian distributor of temperature
+            resistant refractories to the toughest steel making applications. Our
+            global supplier network has delivered over 30,000 tons of refractories
+            to steel makers in 5 continents.
+          </p>
+          <p class="about-us-p">
+            ISO 9002 certified, our partners manufacture the firebrick critical in
+            lining the furnaces supporting steel making in both hot and cold
+            rolled applications in North America.
+          </p>
+          <p class="about-us-p">
+            Our customers consistently achieve 10-15% more melts out of their
+            refractories. Our bricks have High C%, with better corrosion and
+            cracking resistance. Our engineering group also develop monolithics
+            for customer-specific steel making applications.
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Contact Us</a>
+         </div>
+          
+       
       </header>
     </section>
 
     <div>
-      <section>
+      <section class="products_section">
         <h3 class="products_services">PRODUCTS & SERVICES</h3>
         <h2 class="h2_class">Most Loved Products</h2>
         <div class="grid grid--1x2">
@@ -158,63 +163,83 @@
 
     <section>
       <h3 class="products_services">Our Clients & Partners</h3>
-      <h2 class="h2_class">We work with several partners</h2>
+      <h2 class="h2_class head2">We work with several partners</h2>
     </section>
-
-    <section class="form_section">
-      <h1 class="features_head ">Contact us</h1>
-      <form action="">
-        <label for="">First name*</label>
-        <input type="text">
-        <label for="">Last name</label>
-        <input type="text">
-        <label for="">Company name</label>
-        <input type="text">
-        <label for="">Job Title*</label>
-        <input type="text">
-        <label for="">Email*</label>
-        <input type="text">
-        <label  for="">Message</label>
-        <textarea name="" id="" cols="10" rows="3"></textarea>
-        <a href="" class="btn "
-            >Submit</a
-          >
-      </form>
-    </section>
-
-    <div class="box2">
-      <div class="features testimonials">
-        
-        <h1 class="features_head">Testimonials</h1>
-        <p>
-          Altos Hornos de Mexico (AHMSA) hase been working with McKeown International for almost 25 years
-          suppling Silica and Fire Clay brick for our Coke Ovens and Blast Furnace.
-        </p>
-        <p>
-          During this period we have purchased approximately 30,000 Tons of ironmaking refractories. We have
-          found that the brick quality and supply have met our requirements, while McKeown Technical has been
-          exceptional.
-        </p>
-        <p>
-          McKeown currently suppling 2500 tons of coke oven silica brick and remains high on our vendors list
-          of qualified suppliers.
-        </p>
-        <h3>-AHMSA</h3>
-      </div>
-    </div>
-
-    <div class="box2">
-      <div class="features download">
-        <img class="download_image" src="../IMAGES/downloadImage.png" alt="">
-        <h1 class="features_head">Download our whitepaper</h1>
-        
-           
+<div class="box2 grid grid--1x2">
+  
+      <section class="form_section">
+        <h1 class="features_head ">Contact us</h1>
+        <form action="">
+         <div class="names">
+            <div class="fname">
+              <label for="">First name*</label>
+              <input type="text">
+            </div>
+            <div class="lname">
+              <label for="">Last name</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="company">
+            <label for="">Company name</label>
+            <input type="text">
+          </div>
+          <div class="detail-job">
+            <div class="jtitle">
+              <label for="">Job Title*</label>
+              <input type="text">
+            </div>
+            <div class="email">
+              <label for="">Email*</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="msg-box">
+            <label  for="">Message</label>
+            <textarea name="" id="" cols="10" rows="3"></textarea>
+          </div>
+          <a href="" class="btn "
+              >Submit</a
+            >
+        </form>
+      </section>
+  
+      
+        <div class="features testimonials">
+  
+          <h1 class="features_head">Testimonials</h1>
           <p>
-            Here's how this steel maker was able to increase heats by 10% in the Winter Months.
+            Altos Hornos de Mexico (AHMSA) hase been working with McKeown International for almost 25 years
+            suppling Silica and Fire Clay brick for our Coke Ovens and Blast Furnace.
           </p>
-          <a href="" class="btn btn--accent btn--stretched"
-            >Download</a
-          >
+          <p>
+            During this period we have purchased approximately 30,000 Tons of ironmaking refractories. We have
+            found that the brick quality and supply have met our requirements, while McKeown Technical has been
+            exceptional.
+          </p>
+          <p>
+            McKeown currently suppling 2500 tons of coke oven silica brick and remains high on our vendors list
+            of qualified suppliers.
+          </p>
+          <h3>-AHMSA</h3>
+        </div>
+      
+</div>
+
+    <div class="box3">
+      <div class="features1 download grid grid--1x2">
+        <div class="download--img"><img class="download_image" src="../IMAGES/downloadImage.png" alt=""></div>
+        <div class="download--data">
+          <h1 class="features_head">Download our whitepaper</h1>
+          
+          
+            <p>
+              Here's how this steel maker was able to increase heats by 10% in the Winter Months.
+            </p>
+            <a href="" class="btn btn--accent btn--stretched"
+              >Download</a
+            >
+        </div>
       </div>
     </div>
 
