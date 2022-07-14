@@ -63,11 +63,11 @@ body{
     font-weight: 400;
     margin: 0;
 }
-.container{
+/* .container{
     
     margin: 0 auto;
     position: relative;
-}
+} */
 /* .grid{
     display: grid;
 }
@@ -135,7 +135,7 @@ p{
 transition: color 0.3s;
 }
 .nav__item > a:hover{
-    color: #fff;
+    color: #000;
     
 
 }
@@ -266,9 +266,9 @@ color: #fff;
     
 }
 .block__header{
-    top: 10%;
+    
     text-align: center;
-    margin-bottom: 5rem;
+    
     position: absolute;
 }
 .block__header1{
@@ -314,6 +314,10 @@ color: #fff;
     padding-bottom: 2rem;
     font-weight: 500;
 }
+.hero-btn{
+    padding: 4% 10%;
+    font-size: 1.8rem;
+}
 /* Plans Block */
 .block-plans .grid{
     gap: 8rem 4rem;
@@ -334,9 +338,17 @@ color: #fff;
 .hero__image{
     width: 100%;
 }
+.wrapper{
+    margin: 0 5vw;
+}
 /* About us */
 .about-us-heading{
-    margin-top: 40vh;
+    
+    margin-bottom: 5vh;
+    color: var(--brown);
+    text-align: center;
+    font-weight: 600;
+    font-size: 5.8rem;
 }
 .about-us-img{
     width: 100%;
@@ -347,6 +359,9 @@ color: #fff;
     padding: 0px 10px;
     color: #000;
 }
+.about-us-btn{
+    padding: 4% 25%;
+}
 .products_services{
     color: var(--brown);
     text-align: center;
@@ -354,6 +369,7 @@ color: #fff;
     letter-spacing: 2px;
     font-size: 2rem;
     text-transform: uppercase;
+    margin-top: 10rem;
 }
 .h2_class{
     color: var(--brown);
@@ -413,15 +429,16 @@ color: #fff;
 .features{
     
     width: 100vw;
-    height: 130rem !important; 
+    height: 100% !important; 
     background-color: var(--blue);
     text-align: center;
     margin-bottom: 7rem;
+    padding-bottom: 0;
 }
 .features1{
     
     width: 100vw;
-    height: 80rem !important; 
+    height: 100% !important; 
     background-color: var(--blue);
     text-align: center;
     padding-bottom: -20rem;
@@ -434,18 +451,21 @@ color: #fff;
 }
 .features_head{
     color: var(--white);
-    font-size: 5rem;
+    font-size: 4.5rem;
+    padding-left: 1rem;
     font-weight: 500;
     margin-bottom: 12.5rem;
 }
-.other > img{
-    width: 100px;
-    height: 100px;
+
+.other >div > img , .other >.other_row>.other_div > img{
+    width: 8rem;
+    height: 8rem;
     margin-bottom: 4rem;
 }
-.other > p{
+.other> div > p , .other >.other_row>.other_div > p{
     color: var(--white);
     font-size: 2rem;
+    margin: 0 10%;
 }
 .form_section > .features_head{
     color: var(--brown);
@@ -453,6 +473,7 @@ color: #fff;
     margin-bottom: 20px;
 }
 form{
+    
     display: flex;
     flex-direction: column;
     margin-left: 1rem;
@@ -463,15 +484,18 @@ form{
 }
 label{
     font-size: 1.3rem;
-    color: red;
+    color: rgb(230, 29, 29);
     margin-bottom: 5px;
+    margin: 0 0.2rem;
 }
 input{
-    border-radius: 1.5rem;
+    width: 90%;
+    border-radius: 1.2rem;
     padding: 10px;
     margin-bottom: 1rem;
     border: 1px solid #cbd6e2;
     background-color: rgb(245, 248, 250);
+    margin: 0 0;
 }
 .msg-box > textarea{
     border-radius: 1.5rem;
@@ -479,6 +503,8 @@ input{
     margin-bottom: 5rem;
     border: 1px solid #cbd6e2;
     background-color: rgb(245, 248, 250);
+    width: 90%;
+    margin: 0 0;
 }
 form > .btn{
     background-color: rgb(255, 122, 89);
@@ -486,6 +512,7 @@ form > .btn{
     color: var(--white);
     width: 30%;
     padding: 1rem 0;
+    margin-top: 3rem;
 }
 .testimonials > p{
     color: var(--white);
@@ -516,6 +543,8 @@ form > .btn{
 }
 .download{
     height: 60rem;
+    padding-bottom: 5%;
+    margin-top: 5%;
 }
 .download > p{
     font-size: 1.2rem;
@@ -528,14 +557,101 @@ form > .btn{
 .download > a{
     padding: 1.5rem 5rem;
 }
+.other_p{
+    font-size: 2rem;
+}
+
 @media screen and (min-width:768px) {
+    .block__heading{
+        margin: 10vw 3vh;
+        font-size: 6rem;
+        font-weight: 500;
+        
+        
+    }
+    .grid{
+        display: grid;
+    }
+    .grid---1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .other{
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+    }
+    .other_row{
+        display: flex;
+        flex-direction: row;
+    }
+    .other_div{
+        
+    }
+    .other >div > img , .other_row > div > img{
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 4rem;
+    }
+    .other> div > p , .other_row > div > p {
+        color: var(--white);
+        font-size: 2rem;
+        margin: 0 10%;
+    }
+    .products_services{
+        padding: 0 5%;
+    }
+    /* .form_section{
+        order: 2;
+        padding-left: 0;
+    } */
+    .names{
+        display: flex;
+        flex-direction: row;
+       
+    }
+    .fname{
+        display: block;
+         width: 45%;
+    }
+    .lname{
+        margin-left: 1rem;
+        width: 45%;
+    }
+    .company{
+        display: block;
+        width: 90%;
+    }
+    .company > input{
+        width: 96.5%;
+    }
+    .detail-job{
+        display: flex;
+        flex-direction: row;
+    }
+    .jtitle{
+        display: block;
+        width: 45%;
+    }
+    .email{
+        margin-left: 1rem;
+        width: 45%;
+    }
+    .msg-box > label{
+        display: block;
+    }
+    .msg-box > textarea{
+        width: 87%;
+    }
+}
+
+@media screen and (min-width:1024px) {
     .nav__toggler{
         display: none;
     }
     .nav__list{
         width: auto;
         display: flex;
-        font-size: 1.8rem;
+        font-size: 3vh;
         max-height: 100%;
         opacity: 1;
         padding-right: 9rem;
@@ -546,21 +662,52 @@ form > .btn{
         padding-right: 2.7vw;
     }
     .nav__brand {
+        width: 5vw;
+        height: 5vh;
         margin-top: 3rem;
-    margin-left: 10rem;
-    margin-bottom: 3rem;
+    margin-left: 5vw;
+    margin-bottom: 6rem;
+    }
+    .container{
+        /* height: 100vh;
+        margin-bottom: 10vh; */
     }
     .hero__image{
         height: calc(100vh - 15vh) !important;
     object-fit: cover
     }
+     .block__header{
+        text-align: center;
+        margin-left: 5%;
+        
+        
+    }
     .block__heading{
-        margin: 10vw 10vh;
+        margin: 10vw 3vh;
         font-size: 6rem;
         font-weight: 500;
+        
+        
     }
+    .wrapper{
+        margin-top: 10vh;
+    }
+   .about-container{
+    padding-left: 0;
+    
+   }
+   
     .about-us{
         margin-top: 1vh;
+    }
+    .about-us-heading{
+        text-align: left;
+        font-size: 8vh;
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+    .btn--stretched{
+        padding: 3vh 12vw;
     }
     .grid{
         display: grid;
@@ -568,23 +715,52 @@ form > .btn{
     .grid--1x2{
         grid-template-columns: repeat(2,1fr);
     }
+    .grid---1x2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid--1x3{
+        grid-template-columns: repeat(3,1fr);
+    }
     .about-img{
         order: 2;
     }
     .head2{
         margin-bottom: 20rem;
     }
+    .other{
+        display: flex;
+        flex-direction: row;
+        justify-content:center ;
+    }
+    .other_row{
+        display: flex;
+        flex-direction: row;
+    }
+    .other{
+        margin: 0 20rem;
+    }
+    
+    .other >div > img , .other_row > div > img{
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 4rem;
+    }
+    .other> div > p , .other_row > div > p {
+        color: var(--white);
+        font-size: 2rem;
+        margin: 0 10%;
+    }
     .testimonials{
         max-width: 50%;
         
-        height: 100rem !important;
+        height: 85% !important;
     }
     .box2{
         display: flex;
     }
     .form_section{
         order: 2;
-        padding-left: 0;
+        padding-left: 3rem;
     }
     .names{
         display: flex;
@@ -594,8 +770,22 @@ form > .btn{
         display: block;
         
     }
+    .fname > label {
+        padding-left: 0;
+    }
+    .fname > input{
+        width: 85%;
+    }
     .lname{
-        margin-left: 4rem;
+        padding-left: 1rem;
+        
+    }
+    .lname > label{
+        padding-left: 1rem;
+    }
+    .lname > input{
+        margin-left: 1rem;
+        width: 85%;
     }
     .company{
         display: block;
@@ -607,17 +797,31 @@ form > .btn{
         display: flex;
         flex-direction: row;
     }
+    .detail-job > input{
+        width: 85%;
+    }
     .jtitle{
         display: block;
     }
+    
+    .jtitle > input{
+        width: 85%;
+    }
     .email{
-        margin-left: 4rem;
+        padding-left: 1rem;
+    }
+    .email > label{
+        padding-left: 1rem;
+    }
+    .email > input{
+        margin-left: 1rem;
+        width: 85%;
     }
     .msg-box{
         display: block;
     }
     .msg-box > textarea{
-        width: 100%;
+        width: 90%;
     }
     .download{
         height: 30rem;
@@ -649,14 +853,11 @@ form > .btn{
     .products_section{
         margin: 0 10rem;
     }
-    .about-container{
-        padding-left: 10rem;
-    }
-    .about-us-heading{
-        margin-bottom: 0;
-    }
+    
+    
     .about-us-p{
         margin-top: 0;
+        font-size: 3vh;
     }
     .block__header1{
         top: 10%;
@@ -665,6 +866,35 @@ form > .btn{
         
     }
 }
-@media screen and (min-width:1024px) {
-
+@media screen and (min-width:1440px) {
+    body{
+        font-size: 3vh;
+    }
+    .nav__brand > img{
+        width: 12vw;
+        height: 7vh;
+    }
+    .block__heading{
+        margin: 10vw 3vh;
+        font-size: 12rem;
+        font-weight: 500;
+        
+        
+    }
+    .btn{
+        font-size: 5vh;
+    }
+    form > .btn{
+        padding: 0 6rem;
+        font-size: 100%;
+    }
+    .about-us-heading{
+        text-align: left;
+    }
+    .about-container{
+        padding-left: 0;
+    }
+    .download--data > h1 {
+        margin-top: 10rem;
+    }
 }
